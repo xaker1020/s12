@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+.box {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    animation-name: mars;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    /* animation-delay: 5s; */
+
+}
+
+@keyframes mars {
+    0% {
+        background-color: red;
+        top: 0;
+        left: 0;
+
+    }
+
+    25% {
+        background-color: green;
+top: 0;
+left: 1000px;
+    }
+
+    50% {
+        background-color: aqua;
+       top: 300px;
+left: 1000px;
+
+    }
+
+    75% {
+        background-color: blueviolet;
+top: 300px;
+left: 0;
+    }
+
+    100% {
+        background-color: chocolate;
+        top: 0;
+        left: 0;
+    }
+}
